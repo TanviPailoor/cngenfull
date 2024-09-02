@@ -1,0 +1,102 @@
+.referral-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .refer-child {
+    color: #1f3149;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .refer-one {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .refer-one-up {
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .refer-one-down {
+        display: flex;
+        gap: 10px;
+      }
+    }
+    .refer-two {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .refer-two-up {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-size: 18px;
+        }
+        .refer-code {
+          border: 1px solid grey;
+          border-radius: 10px;
+          padding: 2px 20px;
+          align-items: center;
+          justify-content: center;
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+      .refer-two-mid {
+        display: flex;
+        justify-content: space-between;
+        .refer-two-mid-left {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h2 {
+            font-size: 18px;
+          }
+          .clients-invited {
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 2px 10px;
+            width: fit-content;
+            h3 {
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+        .refer-two-mid-right {
+          width: auto;
+          height: auto;
+        }
+      }
+      .refer-two-down {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+          font-size: 18px;
+        }
+        .coupons-earned {
+          border: 1px solid grey;
+          border-radius: 10px;
+          padding: 2px 10px;
+          height: fit-content;
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .refer-three {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 5px;
+    }
+  }
+}

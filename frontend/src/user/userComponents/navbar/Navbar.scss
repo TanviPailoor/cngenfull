@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #1A2944;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar-icon {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #318f99;
+    }
+  }
+  
+  .navbar-icon-active {
+    color: #318f99;
+  }
+  
+  .icon {
+    display: block;
+    margin: 0 auto;
+  }
+  

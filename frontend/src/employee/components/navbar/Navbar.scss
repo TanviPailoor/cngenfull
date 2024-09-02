@@ -1,0 +1,18 @@
+.nav-section {
+  background-color: #1f3149;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+
+  .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+
+    &.active-link {
+      color: #318f99;
+    }
+  }
+}

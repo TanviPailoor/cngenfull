@@ -1,0 +1,31 @@
+.notification-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  .notification-buttons {
+    display: flex;
+    background-color: #f5f5f5;
+    width: 100%;
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      width: 50%;
+      font-size: 18px;
+      color: grey;
+      font-weight: 600;
+    }
+    button.active {
+      border-bottom: 2px solid #318f99;
+      color: #318f99;
+    }
+  }
+  .notification-content {
+    width: 100%;
+  }
+
+  .notifications,
+  .messages {
+    padding: 20px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,53 @@
+.coupon-container {
+  display: flex;
+  gap: 60px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: white;
+  &.received {
+    background-color: #fff;
+  }
+
+  &.redeemed {
+    background-color: rgb(217, 219, 219);
+    opacity: 0.7;
+  }
+
+  &.expired {
+    background-color: rgb(172, 174, 174);
+    opacity: 0.7;
+  }
+  .coupon-left {
+    img {
+      height: auto;
+      width: auto;
+    }
+  }
+  .coupon-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .status-label {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+
+      &.redeemed {
+        color: #4caf50;
+        border: 1px solid #4caf50;
+      }
+
+      &.expired {
+        color: #f44336;
+        border: 1px solid #f44336;
+      }
+    }
+  }
+}

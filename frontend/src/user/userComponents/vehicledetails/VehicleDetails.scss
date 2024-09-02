@@ -1,0 +1,147 @@
+.vehicle-details-container {
+    padding: 1rem;
+    background-color: #f7f7f7; // Equivalent to bg-gray-200 in Tailwind CSS
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-button {
+    margin-right: 1rem;
+    color: #4a4a4a; // Equivalent to text-gray-700 in Tailwind CSS
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .vehicle-info {
+    margin-top: 2.5rem;
+    background-color: #318f99;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .vehicle-image {
+    width: 10rem;
+    height: 8.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vehicle-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1a202c; // Equivalent to text-gray-900 in Tailwind CSS
+  }
+  
+  .vehicle-description {
+    font-size: 0.875rem;
+    color: #1a202c;
+  }
+  
+  .change-vehicle-button {
+    border-color: #318f99;
+    color: #1a202c;
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    display: block;
+    margin: 30px 100px;
+    font-weight: 700;
+  }
+  
+  .booking-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+  }
+  
+  .scroll-left,
+  .scroll-right {
+    color: #1a202c;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .scroll-left {
+    left: 0;
+  }
+  
+  .scroll-right {
+    right: 0;
+  }
+  
+  .booking-scroll {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 1.5rem 1.5rem;
+    scrollbar-width: none; // Hide scrollbar for Firefox
+  }
+  
+  .booking-item {
+    background-color: #318f99;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    min-width: 15.625rem;
+    margin-right: 1rem;
+  }
+  
+  .booking-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .booking-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .detail-image {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-text {
+    font-size: 0.875rem;
+    color: #1a202c;
+    text-align: center;
+  }
+  
+  .booking-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .booking-button {
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border: 2px solid;
+    color: #1a202c;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    width: 100%;
+  }
+  

@@ -1,0 +1,79 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1A2944;
+  
+    .home-header {
+      padding: 1rem;
+  
+      .header-title {
+        text-align: center;
+        font-size: 1.25rem; /* text-xl */
+        font-weight: 600; /* font-semibold */
+        color: #f0f0f0;
+      }
+  
+      .search-bar {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 9999px; /* rounded-full */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 1rem;
+  
+        .search-icon {
+          color: #6b7280; /* text-gray-500 */
+        }
+  
+        .search-input {
+          margin-left: 0.5rem;
+          flex-grow: 1;
+          outline: none;
+        }
+      }
+    }
+  
+    .vehicle-list {
+      flex-grow: 1;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 5rem; /* pb-20 */
+    }
+  
+    .vehicle-card {
+      background-color: #318f99;
+      padding: 1rem;
+      border-radius: 0.75rem; /* rounded-xl */
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+  
+      .vehicle-image {
+        width: 7rem; /* w-28 */
+        height: 5rem; /* h-20 */
+        border-radius: 0.5rem; /* rounded-lg */
+      }
+  
+      .vehicle-name {
+        font-size: 1.125rem; /* text-lg */
+        font-weight: bold;
+        color: #1f2937; /* text-gray-800 */
+      }
+  
+      .vehicle-description {
+        font-size: 0.875rem; /* text-sm */
+        color: #374151; /* text-gray-700 */
+      }
+    }
+  
+    .no-vehicles-text {
+      text-align: center;
+      color: #374151; /* text-gray-700 */
+    }
+  }
+  

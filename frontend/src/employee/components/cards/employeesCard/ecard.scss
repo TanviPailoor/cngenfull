@@ -1,0 +1,27 @@
+@import '../../../globalscss/global.scss';
+.ecard_container {
+  box-shadow: 2px 2px 2px gray;
+  padding: 10px;
+  background-color: #318f99;
+  cursor: pointer;
+  @include flex(row, center, center, 0px);
+  .toggle_container {
+    height: 100%;
+    width: 300px;
+    @include flex(column, center, center, 10px);
+    button {
+      padding: 5px;
+      outline: none;
+      cursor: pointer;
+    }
+    form {
+      @include flex(column, null, null, 5px);
+      box-shadow: 1px 1px 2px gray;
+      input {
+        border: none;
+        outline: none;
+        padding: 5px;
+      }
+    }
+  }
+}

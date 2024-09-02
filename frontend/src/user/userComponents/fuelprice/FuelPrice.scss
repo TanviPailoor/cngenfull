@@ -1,0 +1,106 @@
+.fuel-price-container {
+    .fuel-price-content {
+      min-height: 100vh;
+      background-color: white;
+      padding: 16px;
+  
+      .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+  
+        .back-icon {
+          cursor: pointer;
+          font-size: 1.25rem;
+        }
+  
+        .search-input {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          border-radius: 9999px;
+          padding: 8px 16px;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+          .search-icon {
+            color: #6b7280; // text-gray-500
+          }
+  
+          .city-input {
+            margin-left: 8px;
+            flex-grow: 1;
+            outline: none;
+            background: none;
+            border: none;
+          }
+  
+          .search-button {
+            margin-left: 8px;
+            color: #4b5563; // text-gray-600
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+  
+      .title {
+        font-size: 1.25rem; // text-xl
+        font-weight: bold;
+        margin: 24px 0;
+        text-align: center;
+      }
+  
+      .price-card {
+        background-color: #318f99;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+        .price-card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          .location-info {
+            .location-name {
+              font-size: 1.125rem; // text-lg
+              font-weight: bold;
+              color: #1a202c; // text-gray-900
+            }
+  
+            .date {
+              font-size: 0.875rem; // text-sm
+              color: #1a202c; // text-gray-900
+            }
+          }
+  
+          .fuel-prices {
+            display: flex;
+            gap: 16px;
+  
+            .fuel-type {
+              background-color: white;
+              padding: 8px;
+              border-radius: 12px;
+              text-align: center;
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  
+              .fuel-label {
+                font-size: 0.75rem; // text-xs
+                font-weight: 600;
+                color: #4b5563; // text-gray-600
+              }
+  
+              .fuel-price {
+                font-size: 0.875rem; // text-sm
+                font-weight: bold;
+                color: #dc2626; // text-red-600
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

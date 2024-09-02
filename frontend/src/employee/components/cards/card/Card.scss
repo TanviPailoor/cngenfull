@@ -1,0 +1,174 @@
+@mixin respond-to($media) {
+  @if $media == 'phone' {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+}
+
+.card-container {
+  background-color: #318f99;
+  border-radius: 10px;
+  color: white;
+
+  &.completed {
+    background-color: rgb(109, 193, 194);
+    pointer-events: none;
+    opacity: 0.7;
+  }
+  .card-top {
+    background-color: rgb(198, 198, 198, 0.5);
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 12px 15px;
+    .day-time {
+      display: flex;
+    }
+  }
+  .card-mid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .card-mid-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 15px;
+      align-items: center;
+      font-weight: 400;
+      img {
+        border-radius: 10px;
+      }
+    }
+    .card-mid-bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      gap: 5px;
+      .option-head {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+      }
+      .purchase {
+        .bill {
+          display: flex;
+          justify-content: space-between;
+          gap: 50px;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .card-bottom {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    gap: 20px;
+    .accept {
+      height: 40px;
+      width: 60%;
+      background-color: #1ba842;
+      color: white;
+      font-size: 18px;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .phone {
+      height: 40px;
+      width: 50%;
+      background-color: #318f99;
+      color: white;
+      font-size: 18px;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .accepted-task {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .accepted-task-top {
+        display: flex;
+        gap: 30px;
+        button {
+          height: 40px;
+          width: 60%;
+          color: white;
+          font-size: 18px;
+          border: none;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        button.pending {
+          background-color: #e82127 !important;
+        }
+        button.arrived {
+          background-color: #1ba842;
+        }
+        button[disabled] {
+          background-color: grey;
+        }
+        button:not([disabled]) {
+          background-color: #1ba842;
+        }
+      }
+      .accepted-task-bottom {
+        display: flex;
+        form {
+          display: flex;
+          gap: 30px;
+          .photo {
+            display: none;
+          }
+          .photo-label {
+            border: 1px solid white;
+            background-color: #318f99;
+            color: white;
+            height: 40px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 5px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+            .photo-icon {
+              font-size: 1.5rem;
+            }
+          }
+          input {
+            border: 1px solid white;
+            background-color: #318f99;
+            color: white;
+            height: 40px;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 5px;
+            &::placeholder {
+              color: white;
+              font-size: 18px;
+              text-align: center;
+            }
+          }
+          input[disabled] + .photo-label {
+            opacity: 0.5;
+            pointer-events: none;
+          }
+          input[disabled] {
+            background-color: grey;
+          }
+        }
+      }
+    }
+  }
+}

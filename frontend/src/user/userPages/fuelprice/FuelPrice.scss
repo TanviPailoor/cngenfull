@@ -1,0 +1,83 @@
+.fuel-price-page {
+    .search-bar {
+      display: flex;
+      align-items: center;
+      width: 100%; /* Make the search bar full width */
+      background-color: #fff;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+  
+      .icon {
+        color: #4a5568; /* text-gray-600 */
+      }
+  
+      .arrow-icon {
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+  
+      .search-input {
+        flex-grow: 1;
+        padding: 0.25rem 0.5rem;
+        border: none;
+        border-radius: 0.25rem 0 0 0.25rem;
+        outline: none;
+        width: 100%; /* Ensure the input takes up the remaining space */
+      }
+  
+      .search-icon {
+        margin: 0 0.5rem;
+      }
+  
+      /* Removed styles related to microphone-icon */
+    }
+  
+    .title {
+      text-align: center;
+      font-size: 1.5rem; /* text-2xl */
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    .price-card {
+      background-color: #81e6d9; /* bg-teal-200 */
+      padding: 1rem;
+      border-radius: 0.25rem;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+      .price-details {
+        display: flex;
+        justify-content: space-between;
+  
+        .city-name {
+          font-size: 1.25rem; /* text-xl */
+          font-weight: 600; /* font-semibold */
+        }
+  
+        .date {
+          font-size: 0.875rem; /* text-sm */
+          color: #718096; /* text-gray-600 */
+        }
+  
+        .prices {
+          display: flex;
+          gap: 1rem;
+  
+          .price {
+            text-align: center;
+  
+            .label {
+              font-weight: 600; /* font-semibold */
+            }
+  
+            .value {
+              color: #f56565; /* text-red-500 */
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,89 @@
+@mixin respond-to($media) {
+  @if $media == 'phone' {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+}
+
+.taskcard-container {
+  background-color: #318f99;
+  border-radius: 10px;
+  color: white;
+  .taskcard-top {
+    background-color: rgb(198, 198, 198, 0.5);
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 12px 5px;
+    .day-time {
+      display: flex;
+    }
+  }
+  .taskcard-mid {
+    display: flex;
+    flex-direction: column;
+    .taskcard-mid-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 15px;
+      align-items: center;
+      font-weight: 400;
+      img {
+        border-radius: 10px;
+      }
+    }
+    .taskcard-mid-bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      gap: 5px;
+      .option-head {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+      }
+      .purchase {
+        display: flex;
+        padding: 0 20px;
+        .bill {
+          display: flex;
+          gap: 50px;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .taskcard-bottom {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    gap: 20px;
+    .accept {
+      height: 40px;
+      width: 60%;
+      background-color: #1ba842;
+      color: white;
+      font-size: 20px;
+      border: none;
+      padding: 10px;
+    }
+    .phone {
+      height: 40px;
+      width: 50%;
+      background-color: #318f99;
+      color: white;
+      font-size: 18px;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

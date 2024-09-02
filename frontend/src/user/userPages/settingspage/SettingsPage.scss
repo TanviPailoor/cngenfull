@@ -1,0 +1,68 @@
+.settings-page {
+    min-height: 100vh;
+    background-color: #f0f4f8; // Light background color
+  
+    .container {
+      padding: 40px;
+      position: relative;
+  
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: none;
+        border: none;
+        color: #4a4a4a; // Gray color
+        cursor: pointer;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #6b6b6b; // Slightly lighter gray
+        }
+  
+        .icon {
+          font-size: 20px;
+        }
+      }
+  
+      .content {
+        margin-top: 32px;
+  
+        .title {
+          font-size: 1.5rem;
+          color: #1a1a1a; // Dark gray color
+          font-weight: bold;
+        }
+  
+        .settings-list {
+          margin-top: 32px;
+          list-style: none;
+          padding: 0;
+          margin-bottom: 16px;
+  
+          .settings-item {
+            display: flex;
+            align-items: center; // Aligns icon and text vertically in the center
+            gap: 8px; // Space between icon and text
+            color: #4a4a4a;
+            cursor: pointer; // Indicates item is clickable
+            margin-bottom: 16px; // Adds spacing between list items
+  
+            &:hover {
+              color: #6b6b6b; // Slightly lighter gray on hover
+            }
+  
+            .icon {
+              font-size: 20px;
+              color: #6b6b6b; // Gray color
+            }
+  
+            span {
+              flex: 1; // Makes sure text spans properly and aligns to the left
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,60 @@
+.editpro-container {
+  min-height: 100vh;
+  .editpro-mid {
+    padding: 20px;
+    background-color: #f5f5f5;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .error {
+        color: red;
+      }
+      input {
+        padding: 15px;
+        border: none;
+        border-radius: 20px;
+        background-color: #1f3149;
+        font-size: 18px;
+        color: #f5f5f5;
+        &::placeholder {
+          color: rgb(174, 168, 168);
+          font-size: 20px;
+        }
+      }
+      .edit-photo-input {
+        display: none;
+      }
+      .edit-photo-label {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 25px;
+        background-color: #1f3149;
+        color: rgb(174, 168, 168);
+        font-size: 20px;
+        font-weight: 400;
+        .upload-icon {
+          font-size: 2rem;
+        }
+      }
+
+      .submit-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          height: 50px;
+          width: 70%;
+          border-radius: 20px;
+          background: #1ba842;
+          border: none;
+          padding: 10px;
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}

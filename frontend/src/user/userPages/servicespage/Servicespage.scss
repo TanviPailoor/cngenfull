@@ -1,0 +1,63 @@
+.services-page {
+    min-height: 100vh;
+    background-color: #f3f4f6; // Light gray background
+  
+    .services-content {
+      padding: 16px;
+      
+      .back-button {
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 16px;
+        color: #318f99;
+  
+        .icon {
+          font-size: 24px;
+        }
+      }
+  
+      .title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+      }
+  
+      .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+  
+        .service-item {
+          background-color: #318f99;
+          padding: 16px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          color: #333;
+  
+          .service-title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #000000;
+          }
+  
+          .service-description {
+            font-size: 0.875rem;
+            color: #000000;
+          }
+  
+          &.clickable {
+            cursor: pointer;
+            transition: background-color 0.3s;
+  
+            &:hover {
+              background-color: #287a8e;
+            }
+          }
+        }
+      }
+    }
+  }
+  

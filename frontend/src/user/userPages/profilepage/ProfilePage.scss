@@ -1,0 +1,146 @@
+.profile-page {
+    .profile-content {
+      padding: 0.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .profile-header {
+      position: relative;
+      .back-button {
+        position: absolute;
+        top: 1.5rem;
+        right: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      .profile-info {
+        background-color: #318f99;
+        color: #1f2937;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .profile-details {
+          display: flex;
+          align-items: center;
+          .avatar {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+          }
+          .profile-text {
+            .name {
+              font-size: 1.25rem;
+              font-weight: 600;
+            }
+          }
+          .edit-button {
+            margin-left: auto;
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+        }
+        .description {
+          margin-top: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  
+    .profile-actions {
+      margin-top: 1rem;
+      .action-item {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+        .icon {
+          margin-right: 1rem;
+          margin-left: 1.5rem;
+        }
+        .action-text {
+          .action-title {
+            font-weight: 500;
+          }
+        }
+        .edit-location {
+          margin-left: auto;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .edit-popup {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+      .popup-content {
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 28rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .popup-title {
+          font-size: 1.125rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+        .input-field, .textarea-field {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid #ddd;
+          border-radius: 0.25rem;
+          margin-bottom: 0.5rem;
+          &:focus {
+            border-color: #1e565c;
+            outline: none;
+          }
+        }
+        .popup-buttons {
+          display: flex;
+          justify-content: flex-end;
+          .cancel-button {
+            background-color: #e5e7eb;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            &:hover {
+              background-color: #d1d5db;
+            }
+          }
+          .update-button {
+            background-color: #0c2d13;
+            color: #fff;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            &:hover {
+              background-color: #218838;
+            }
+          }
+        }
+      }
+    }
+  
+    .icon {
+      color: #1f2937; /* Default icon color */
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+  

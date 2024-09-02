@@ -1,0 +1,51 @@
+.message-container {
+  display: flex;
+  padding: 10px 5px;
+  justify-content: space-between;
+  .message-content {
+    display: flex;
+    gap: 10px;
+    .profile-photo {
+      img {
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+      }
+    }
+    .profile-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .message-time {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    p {
+      font-size: 12px;
+      padding: 2px;
+    }
+    .messages {
+      display: flex;
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      background-color: #318f99;
+      align-items: center;
+      justify-content: center;
+      p {
+        color: white;
+        font-size: medium;
+        font-weight: 400;
+      }
+    }
+  }
+}

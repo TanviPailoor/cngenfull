@@ -1,0 +1,86 @@
+.edit-location-page {
+    background-color: #e2e8f0; /* bg-gray-200 */
+    min-height: 100vh;
+    padding: 1rem; /* p-4 */
+    color: #1a202c; /* text-gray-900 */
+  
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; /* mb-4 */
+  
+      .back-button {
+        color: #1a202c; /* text-gray-900 */
+        font-size: 1.5rem; /* h-6 w-6 */
+      }
+  
+      .title {
+        font-size: 1.25rem; /* text-xl */
+        font-weight: bold;
+        margin-left: 1rem; /* ml-4 */
+      }
+    }
+  
+    .locations {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; /* space-y-4 */
+  
+      .location-card {
+        background-color: #318f99; /* bg-[#318f99] */
+        padding: 1rem; /* p-4 */
+        border-radius: 0.5rem; /* rounded-lg */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .location-info {
+          display: flex;
+          align-items: center;
+          color: #000; /* text-black */
+  
+          .location-icon {
+            padding: 0.5rem; /* p-2 */
+            border-radius: 50%;
+            margin-right: 1rem; /* mr-4 */
+  
+            svg {
+              font-size: 1.5rem; /* h-6 w-6 */
+            }
+          }
+  
+          .location-details {
+            .location-type {
+              font-weight: bold;
+            }
+  
+            .address-input {
+              margin-top: 0.25rem; /* mt-1 */
+              padding: 0.5rem; /* p-2 */
+              border: 1px solid #edf2f7; /* border-gray-200 */
+              border-radius: 0.25rem; /* rounded */
+              width: 100%;
+              font-size: 0.875rem; /* text-sm */
+            }
+  
+            .location-address {
+              font-size: 1rem; /* text-md */
+            }
+          }
+        }
+  
+        .location-actions {
+          display: flex;
+          gap: 0.5rem; /* space-x-2 */
+  
+          .save-button,
+          .edit-button,
+          .delete-button {
+            color: #1a202c; /* text-gray-900 */
+            font-size: 1.25rem; /* h-5 w-5 */
+          }
+        }
+      }
+    }
+  }
+  

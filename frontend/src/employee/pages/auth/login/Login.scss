@@ -1,0 +1,114 @@
+@mixin respond-to($media) {
+  @if $media == 'phone' {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+}
+.login-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 30px;
+
+  @include respond-to('phone') {
+    padding: 20px;
+  }
+  .login-top {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .login-bottom {
+    flex: 2;
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        border: none;
+        background-color: #1f3149;
+        font-weight: 500;
+        padding: 15px;
+        color: white;
+        font-size: 20px;
+        border-radius: 25px;
+        &::placeholder {
+          color: rgb(180, 179, 179);
+          font-size: 0.9rem;
+        }
+      }
+      .login-password-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .password-input {
+          flex: 1;
+          padding-right: 2.5rem;
+        }
+
+        .password-toggle-label {
+          cursor: pointer;
+          position: absolute;
+          right: 0.75rem;
+        }
+        .eye-icon {
+          color: #666;
+        }
+      }
+
+      .login-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 7px;
+        h2 {
+          font-size: 22px;
+          font-family: 'Open Sans', sans-serif;
+        }
+        p {
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+        }
+      }
+      .login-btn-link {
+        display: flex;
+        flex-direction: column;
+        button {
+          padding: 15px;
+          border-radius: 25px;
+          background-color: #1ba842;
+          border: none;
+          color: white;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer;
+          &:hover {
+            background-color: #66c180;
+          }
+        }
+        .login-link {
+          display: flex;
+          padding: 7px;
+
+          p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+          }
+          Link {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

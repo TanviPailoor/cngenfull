@@ -1,0 +1,30 @@
+@import '../../../globalscss/global.scss';
+.admin {
+  height: 100vh;
+  @include flex(row, null, null, 0px);
+  @include responsive(900px) {
+    @include flex(column, null, null, 0px);
+  }
+  .left {
+    @include flex(column, center, center, 10px);
+    padding: 10px;
+    flex: 1;
+    background-color: rgb(10, 10, 39);
+    @include responsive(900px) {
+      display: none;
+    }
+  }
+  .right {
+    overflow: scroll;
+    flex: 4;
+  }
+  .mobileNav {
+    padding: 10px;
+    background-color: black;
+    margin: 50px;
+    display: none;
+    @include responsive(900px) {
+      display: flex;
+    }
+  }
+}

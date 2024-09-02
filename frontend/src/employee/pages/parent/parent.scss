@@ -1,0 +1,5 @@
+@import '../../globalscss/global.scss';
+.parent {
+  min-height: 100vh;
+  @include flex(column, null, null, 0px);
+}
