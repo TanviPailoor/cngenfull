@@ -31,6 +31,7 @@ import ProfilePage from "./user/userPages/profilepage/ProfilePage";
 import ServicesPage from "./user/userPages/servicespage/ServicesPage";
 import SettingPage from "./user/userPages/settingspage/SettingPage";
 import URegister from "./user/userComponents/register/URegister";
+import Assigntask from "./employee/pages/admin/assigntask/Assigntask";
 const App = () => {
 	const { loginInfo } = useSelector((state) => state.aslice);
 	const socket = io("http://localhost:8600");
@@ -50,7 +51,6 @@ const App = () => {
 		<section className="font">
 			<BrowserRouter>
 				<Routes>
-					{/* <Route path="/" element={<SplashScreen />} /> */}
 					<Route path="/mainLogin" element={<MainLogin />} />
 					<Route path="/emp-register" element={<Register />} />
 					<Route path="/emp-login" element={<Login />} />
@@ -65,6 +65,7 @@ const App = () => {
 						<Route path="admin/*" element={<Admin socket={socket} />}>
 							<Route path="employees" element={<Employees />} />
 							<Route path="tasks" element={<Tasks />} />
+							<Route path="assigntasks" element={<Assigntask />} />
 						</Route>
 					</Route>
 					<Route path="/user-login" element={<ULogin />} />

@@ -20,8 +20,7 @@
   }
   .mobileNav {
     padding: 10px;
-    background-color: black;
-    margin: 50px;
+    background-color: #1A2944;
     display: none;
     @include responsive(900px) {
       display: flex;

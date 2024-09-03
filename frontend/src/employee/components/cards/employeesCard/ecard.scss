@@ -1,26 +1,39 @@
 @import '../../../globalscss/global.scss';
 .ecard_container {
-  box-shadow: 2px 2px 2px gray;
+  box-shadow: 2px 2px 2px rgb(136, 135, 135);
   padding: 10px;
-  background-color: #318f99;
+  background-color: #276168;
   cursor: pointer;
+  border-radius: 50px;
+  border: 2px;
   @include flex(row, center, center, 0px);
   .toggle_container {
-    height: 100%;
-    width: 300px;
+    display: flex;
+    margin: 2px;
+    text-align: left;
+    height: 90%;
+    border: none;
     @include flex(column, center, center, 10px);
     button {
-      padding: 5px;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 20px;
+      border: none;
+      background-color: #aabdc0;
       outline: none;
       cursor: pointer;
     }
     form {
       @include flex(column, null, null, 5px);
-      box-shadow: 1px 1px 2px gray;
+      // box-shadow: 1px 1px 2px gray;
       input {
         border: none;
         outline: none;
-        padding: 5px;
+        padding: 8px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 5px;
       }
     }
   }

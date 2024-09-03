@@ -3,32 +3,46 @@
   height: 100vh;
   @include flex(column, null, null, 10px);
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
   }
-  h3 {
-    font-size: 1.4rem;
-    word-wrap: break-word;
-  }
+ 
+ 
+  
   .bottom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px;
-    gap: 50px;
+    gap: 20px;
     @include responsive(900px) {
       grid-template-columns: repeat(3, 40%);
     }
     @include responsive(500px) {
-      grid-template-columns: repeat(1, 80%);
+      grid-template-columns: repeat(1, 90%);
       justify-content: center;
     }
     flex: 1;
     .task_card {
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-direction: column;
-
-      box-shadow: 2px 2px 2px gray;
+      border-radius: 15px;
+      gap: 5px;
+      box-shadow: 2px 2px 2px #255a60;
+      background-color: #337f87;
+      h3 {
+        display: flex;
+        gap: 10px;
+        margin-left: 15px;
+        span{
+          font-weight: 600;
+          font-size: 1.3rem;
+        }
+        font-size: 1.2rem;
+        font-weight: 500;
+        word-wrap: break-word;
+        text-align: start;
+      }
     }
   }
 }

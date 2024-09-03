@@ -3,7 +3,7 @@ import './admin.scss';
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Sidenavbar } from '../../../components';
-// import configuredUrl from '../../../utilities/request';
+import configuredUrl from '../../../utilities/request';
 import { toast } from 'react-toastify';
 const Admin = ({ socket }) => {
   const navigate = useNavigate();

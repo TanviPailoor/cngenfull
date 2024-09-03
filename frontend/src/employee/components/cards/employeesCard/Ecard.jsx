@@ -36,10 +36,10 @@ const Ecard = ({ name, location, email, phone, _id }) => {
     <section onClick={changeToggleState} className="ecard_container">
       {toggle ? (
         <section className="toggle_container">
-          <h1>{name}</h1>
-          <h2>{phone}</h2>
-          <h3>{email}</h3>
-          <h4>{location}</h4>
+          <h1>Name: {name}</h1>
+          <h3>Phone:{phone}</h3>
+          <h3>Email:{email}</h3>
+          <h3>Location:{location}</h3>
           <button onClick={changeFormToggle}>Assign Task</button>
           {formToggle && (
             <form onClick={handleFormClick} onSubmit={submitTask}>

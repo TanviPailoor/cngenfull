@@ -1,6 +1,7 @@
 const adminNav = [
 	{ path: "/admin/employees", title: "Employees" },
-	{ path: "/admin/tasks", title: "tasks" },
+	{ path: "/admin/tasks", title: "Tasks" },
+	{ path: "/admin/assigntasks", title: "Assigntasks" },
 ];
 
 const cardData = [

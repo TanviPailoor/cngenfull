@@ -1,6 +1,7 @@
 .active {
-  background-color: white;
+  background-color: rgb(164, 170, 170);
   color: rgb(7, 7, 24) !important;
+  border-radius: 20px;
 }
 .adminlink {
   color: white;
@@ -8,4 +9,5 @@
   width: 100%;
   padding: 10px;
   text-decoration: none;
+  text-align: center;
 }
